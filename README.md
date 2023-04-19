@@ -39,25 +39,31 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Git commit example
 
-- build: Changes related to building system or external dependencies
-  - Example: build: Upgrade webpack to v5.0.0
-- ci: Changes related to continuous integration configuration
-  - Example: ci: Fix error in Jenkinsfile
-- chore: Changes to non-business logic code, such as updating development tools
-  - Example: chore: Update .gitignore file
-- docs: Changes related to documentation
-  - Example: docs: Add API documentation
-- feat: Addition of new feature
-  - Example: feat: Add user login functionality
-- fix: Bug fix
-  - Example: fix: Fix shopping cart calculation error
-- perf: Improvements to program performance
-  - Example: perf: Reduce homepage loading time
-- refactor: Refactoring of code without changing its functionality
-  - Example: refactor: Refactor shopping cart module
-- revert: Revert to a previous commit
-  - Example: revert: Roll back to the previous version
-- style: Improvements to code style, such as indentation, spacing, etc.
-  - Example: style: Update code formatting
-- test: Addition or modification of test code
-  - Example: test: Add tests for shopping cart functionality
+以下是專案中設定的 commitlint 規則：
+- 提交訊息標題最大長度為 72 個字元。
+- 提交類型必須是以下之一：`build`, `ci`, `chore`, `docs`, `feat`, `fix`, `perf`, `refactor`, `revert`, `style`, `test`。
+- 提交主題必須使用句子大小寫（sentence-case）。
+
+提交訊息範例：
+- `build`: 針對構建系統或外部依賴的更改
+  - 範例：`build: 升級 webpack 到 v5.0.0`
+- `ci`: 針對持續集成配置的更改
+  - 範例：`ci: 修復 Jenkinsfile 中的錯誤`
+- `chore`: 對非業務邏輯程式碼的更改，例如更新開發工具
+  - 範例：`chore: 更新 .gitignore 檔案`
+- `docs`: 文件相關的更改
+  - 範例：`docs: 新增 API 文件`
+- `feat`: 新功能的添加
+  - 範例：`feat: 新增使用者登入功能`
+- `fix`: 修復程式錯誤
+  - 範例：`fix: 修復購物車計算錯誤的問題`
+- `perf`: 改善程式的性能
+  - 範例：`perf: 降低首頁載入時間`
+- `refactor`: 重構程式，但不改變其功能
+  - 範例：`refactor: 重構購物車模塊`
+- `revert`: 恢復先前的提交
+  - 範例：`revert: 回滾至上一個版本`
+- `style`: 改善程式碼風格，例如縮排、空格等
+  - 範例：`style: 更新程式碼格式`
+- `test`: 增加或修改測試程式
+  - 範例：`test: 新增購物車功能的測試`
