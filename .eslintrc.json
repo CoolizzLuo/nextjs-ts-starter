@@ -41,23 +41,24 @@
   ],
   "rules": {
     "arrow-body-style": 0,
-    "func-style": ["error", "expression"],
+    "func-style": [2, "expression"],
     "global-require": 0,
-    "indent": ["error", 2, { "SwitchCase": 1 }],
-    "linebreak-style": ["error", "unix"],
+    "import/no-extraneous-dependencies": 0,
+    "indent": [2, 2, { "SwitchCase": 1 }],
+    "linebreak-style": [2, "unix"],
     "no-console": 1,
-    "no-unused-vars": "off",
+    "no-unused-vars": 1,
     "@typescript-eslint/no-unused-vars": [
-      "warn",
+      1,
       {
         "vars": "all",
         "args": "after-used",
         "ignoreRestSiblings": false
       }
     ],
-    "object-curly-spacing": ["error", "always"],
+    "object-curly-spacing": [2, "always"],
     "operator-linebreak": [
-      "error",
+      2,
       "after",
       {
         "overrides": {
@@ -66,21 +67,21 @@
         }
       }
     ],
-    "prettier/prettier": "error",
-    "react/button-has-type": "off",
-    "react/destructuring-assignment": ["error", "always"],
+    "prettier/prettier": 2,
+    "react/button-has-type": 1,
+    "react/destructuring-assignment": [2, "always"],
     "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
-    "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
-    "react/jsx-one-expression-per-line": "off",
-    "react/jsx-props-no-spreading": "off",
-    "semi": ["error", "always"],
-    "space-before-function-paren": ["error", "never"]
+    "react/jsx-filename-extension": [2, { "extensions": [".tsx"] }],
+    "react/jsx-one-expression-per-line": 0,
+    "react/jsx-props-no-spreading": 0,
+    "semi": [2, "always"],
+    "space-before-function-paren": [2, "never"]
   },
   "overrides": [
     {
       "files": ["**/*.ts", "**/*.tsx"],
       "rules": {
-        "react/prop-types": "off"
+        "react/prop-types": 0
       }
     }
   ],
